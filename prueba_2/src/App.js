@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
-function App() {
+function Ap() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    async function getProducts() {
+    const getProducts = async()=> {
       try {
         const response = await fetch('https://dummyjson.com/products');
         const data = await response.json();
